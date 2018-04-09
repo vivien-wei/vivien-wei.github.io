@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何使一个宽高度不知的div垂直居中 | Hexo</title>
+
+  
+  <meta name="author" content="vivien">
+  
+
+  
+  <meta name="description" content="html123456789&amp;lt;div class=&amp;quot;appointDiv&amp;quot;&amp;gt;	&amp;lt;div class=&amp;quot;shadow&amp;quot;&amp;gt;		&amp;lt;img src=&amp;quot;img/3/name.png&amp;quot; style=&amp;quot;position: absolute;top: 36%;left: 12%;width: 74%;&amp;quot;&amp;gt;		&amp;lt;img src=&amp;quot;img/3/tel.png&amp;quot; style=&amp;quot;position: absolute;top: 47%;left: 12%;width: 74%;&amp;quot;&amp;gt;		&amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;name&amp;quot; placeholder=&amp;quot;请输入姓名&amp;quot;&amp;gt;		&amp;lt;input type=&amp;quot;tel&amp;quot; id=&amp;quot;phone&amp;quot; placeholder=&amp;quot;请输入电话&amp;quot; maxlength=&amp;quot;11&amp;quot;&amp;gt;		&amp;lt;span class=&amp;quot;close&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;	&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;">
+  
+
+  
+  
+  <meta name="keywords" content="前端">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="如何使一个宽高度不知的div垂直居中"/>
+
+  <meta property="og:site_name" content="Hexo"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Hexo</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>如何使一个宽高度不知的div垂直居中</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2018/04/09/20180409/" rel="bookmark">
+        <time class="entry-date published" datetime="2018-04-09T02:45:38.705Z">
+          2018-04-09
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h3 id="html"><a href="#html" class="headerlink" title="html"></a>html</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;appointDiv&quot;&gt;</span><br><span class="line">	&lt;div class=&quot;shadow&quot;&gt;</span><br><span class="line">		&lt;img src=&quot;img/3/name.png&quot; style=&quot;position: absolute;top: 36%;left: 12%;width: 74%;&quot;&gt;</span><br><span class="line">		&lt;img src=&quot;img/3/tel.png&quot; style=&quot;position: absolute;top: 47%;left: 12%;width: 74%;&quot;&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; id=&quot;name&quot; placeholder=&quot;请输入姓名&quot;&gt;</span><br><span class="line">		&lt;input type=&quot;tel&quot; id=&quot;phone&quot; placeholder=&quot;请输入电话&quot; maxlength=&quot;11&quot;&gt;</span><br><span class="line">		&lt;span class=&quot;close&quot;&gt;&lt;/span&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="css"><a href="#css" class="headerlink" title="css"></a>css</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">.appointDiv&#123;</span><br><span class="line">	width: 100%;</span><br><span class="line">	height: 100%;</span><br><span class="line">	position: absolute; /* 不用固定定位，不然会出现input光标错位的问题 */</span><br><span class="line">	top: 0;</span><br><span class="line">	left: 0;</span><br><span class="line">	z-index: 9999;</span><br><span class="line">	background: rgba(0,0,0,0.3);</span><br><span class="line">	display: none;</span><br><span class="line">&#125;</span><br><span class="line">.shadow&#123;</span><br><span class="line">	position: absolute;</span><br><span class="line">	width: 90%;</span><br><span class="line">	height: 60%;</span><br><span class="line">	margin-left: 6%;</span><br><span class="line">	margin-top: 30%;</span><br><span class="line">	background: url(&quot;../img/3/model.png&quot;) no-repeat;</span><br><span class="line">	background-size: 100% 100%;</span><br><span class="line">&#125;</span><br><span class="line">.shadow&gt;input&#123;</span><br><span class="line">	font-size: 20px;</span><br><span class="line">	color: #666;</span><br><span class="line">	position: absolute;</span><br><span class="line">	left: 35%;</span><br><span class="line">	width: 50%;</span><br><span class="line">	padding: 2% 0; /* input的高尽量用padding撑开 */</span><br><span class="line">	height: 30px;</span><br><span class="line">&#125;</span><br><span class="line">#name&#123;</span><br><span class="line">	top: 36%;</span><br><span class="line">&#125;</span><br><span class="line">#phone&#123;</span><br><span class="line">	top: 47%;</span><br><span class="line">&#125;</span><br><span class="line">.close&#123;</span><br><span class="line">	position: absolute;</span><br><span class="line">	top: 0;</span><br><span class="line">	right: 0;</span><br><span class="line">	width: 40px;</span><br><span class="line">	height: 40px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="js"><a href="#js" class="headerlink" title="js"></a>js</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">//这样做是为了防止shadow被虚拟键盘挤上去</span><br><span class="line">$(function()&#123;</span><br><span class="line">	var mobile   = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);</span><br><span class="line">    var touchstart = mobile ? &quot;touchstart&quot; : &quot;mousedown&quot;;</span><br><span class="line">    var touchend = mobile ? &quot;touchend&quot; : &quot;mouseup&quot;;</span><br><span class="line">    var touchmove = mobile ? &quot;touchmove&quot; : &quot;mousemove&quot;;</span><br><span class="line"></span><br><span class="line">	var h=$(window).height(); //获取窗口的高度</span><br><span class="line">    var distanceFun; //滚动距离</span><br><span class="line">    $(window).scroll(function () &#123;</span><br><span class="line">        console.log( $(window).scrollTop());</span><br><span class="line">        var distance = $(window).scrollTop(); //获取窗口滚动的高度</span><br><span class="line">        distanceFun = distance;</span><br><span class="line">  </span><br><span class="line">    &#125;);</span><br><span class="line">    </span><br><span class="line">     $(&quot;.appoint&quot;).click(function () &#123;</span><br><span class="line">		//.appointDiv的top值为滚动的距离</span><br><span class="line">    	 $(&quot;.appointDiv&quot;).css(&#123;</span><br><span class="line">    		 &quot;display&quot;: &quot;block&quot;,</span><br><span class="line">    		 &quot;top&quot;: distanceFun</span><br><span class="line">    	 &#125;);</span><br><span class="line">		 //input失去焦点后.appointDiv的top值为滚动的距离</span><br><span class="line">    	 $(&quot;input&quot;).blur(function()&#123;</span><br><span class="line">		     $(&quot;.appointDiv&quot;).css(&quot;top&quot;, distanceFun);</span><br><span class="line">		 &#125;);</span><br><span class="line">    	//阻止屏幕滑动</span><br><span class="line">	    $(&apos;html,body&apos;).on(touchmove,function(e)&#123;</span><br><span class="line">	        e.preventDefault()</span><br><span class="line">	    &#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">    </span><br><span class="line">    $(&quot;.close&quot;).click(function () &#123;</span><br><span class="line">        $(&quot;.appointDiv&quot;).css(&quot;display&quot;,&quot;none&quot;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/CSS/">CSS</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/前端/">前端</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2018 vivien
+    
+  </p>
+</footer>
+    
+  </div>
+</div>
+</body>
+</html>
